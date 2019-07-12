@@ -5,8 +5,128 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="header">
+      <img class="header__logo logo" src="#" alt="Логотип Mishka">
+      <div class="header__menu-btn"></div>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="main">
 
+      <section class="main__intro intro">
+        <div class="container">
+          <h1 class="main__title">Милые штуки ручной работы для дома</h1>
+        </div>
+      </section>
+
+      <section class="catalog-nav">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+
+        <div class="container">
+          <ul class="catalog-nav__list">
+            <li class="catalog-nav__item catalog-nav__item--interior">
+              <a  class="catalog-nav__link" href="#">
+                Предметы интерьера
+                <span class="catalog-nav__icon"></span>
+              </a>
+            </li>
+            <li class="catalog-nav__item catalog-nav__item--toys">
+              <a  class="catalog-nav__link" href="#">
+                Детские игрушки
+                <span class="catalog-nav__icon"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="week-product">
+        <div class="container">
+
+          <h2 class="week-product__type section__title">Вязаные корзинки</h2>
+
+          <p class="week-product__title">Товар недели</p>
+
+          <p class="week-product__paragrapg">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+
+          <dl class="week-product__parameters parameters">
+            <div class="parameters__item">
+              <dt class="parameters__term">Цвет:</dt>
+              <dd class="parameters__description">«Тиффани»/серый</dd>
+            </div>
+            <div class="parameters__item">
+              <dt class="parameters__term">Диаметр:</dt>
+              <dd class="parameters__description">25 см</dd>
+            </div>
+            <div class="parameters__item">
+              <dt class="parameters__term">Высота:</dt>
+              <dd class="parameters__description">15 см</dd>
+            </div>
+          </dl>
+
+          <img class="week-product__image" src="#" alt="Вязаные корзинки">
+          <p class="week-product__price">Цена: 990 руб.</p>
+          <button class="week-product__button button">Заказать</button>
+
+        </div>
+      </section>
+
+       <section class="about-us">
+          <div class="container">
+            <h2 class="section__title">Коротко о нас:</h2>
+
+            <ul class="about-us__list">
+              <li class="about-us__item">
+                <span class="about-us__icon about-us__icon--flower"></span>
+                <p class="about-us__content">Экологически чистые материалы</p>
+              </li>
+              <li class="about-us__item">
+                <span class="about-us__icon about-us__icon--price"></span>
+                <p class="about-us__content">Скандинавский стиль по российской цене</p>
+              </li>
+              <li class="about-us__item">
+                <span class="about-us__icon about-us__icon--likes"></span>
+                <p class="about-us__content">Увеличивает лайки на фотографиях</p>
+              </li>
+              <li class="about-us__item">
+                <span class="about-us__icon about-us__icon--knit"></span>
+                <p class="about-us__content">Связано вручную с любовью и умилением</p>
+              </li>
+              <li class="about-us__item">
+                <span class="about-us__icon about-us__icon--rocket"></span>
+                <p class="about-us__content">Поддержка отечественного производителя</p>
+              </li>
+              <li class="about-us__item">
+                <span class="about-us__icon about-us__icon--gift"></span>
+                <p class="about-us__content">Поставляется в подарочной упаковке</p>
+              </li>
+            </ul>
+          </div>
+       </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__social social">
+          <li class="social__item">
+            <span class="visually-hidden">Мы в инстаграм</span>
+            <span class="social__icon social__icon--inst"></span>
+          </li>
+          <li class="social__item">
+            <span class="visually-hidden">Мы в Фейсбук</span>
+            <span class="social__icon social__icon--fb"></span>
+          </li>
+          <li class="social__item">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <span class="social__icon social__icon--twitter"></span>
+          </li>
+        </ul>
+
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <span class="visually-hidden">HTML Academy</span>
+          <span class="copyright__icon"></span>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
