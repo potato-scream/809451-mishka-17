@@ -10,7 +10,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint .",
+    "stylelint": "stylelint ./source/css",
     "test": "npm run editorconfig"
   },
   "editorconfig-cli": [
