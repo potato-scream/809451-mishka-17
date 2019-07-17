@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
   </head>
   <body>
     <header class="header">
-      <img class="header__logo logo" src="#" alt="Логотип Mishka" height="0" width="0">
-      <button class="header__menu-btn" type="button"></button>
+      <div class="container">
+        <img class="header__logo logo" src="#" alt="Логотип Mishka" height="0" width="0">
+        <button class="header__menu-btn" type="button"></button>
+      </div>
     </header>
 
     <main class="main">
@@ -42,7 +46,7 @@
       <section class="week-product">
         <div class="container">
 
-          <h2 class="week-product__type section__title">Вязаные корзинки</h2>
+          <h2 class="week-product__type">Вязаные корзинки</h2>
 
           <p class="week-product__title">Товар недели</p>
 
@@ -65,14 +69,14 @@
 
           <img class="week-product__image" src="#" alt="Вязаные корзинки" height="0" width="0">
           <p class="week-product__price">Цена: 990 руб.</p>
-          <button class="week-product__button button">Заказать</button>
+          <a class="week-product__button button">Заказать</a>
 
         </div>
       </section>
 
       <section class="about-us">
         <div class="container">
-          <h2 class="section__title">Коротко о нас:</h2>
+          <h2 class="about-us__title">Коротко о нас:</h2>
 
           <ul class="about-us__list">
             <li class="about-us__item">
@@ -105,7 +109,7 @@
 
       <section class="reviews">
         <div class="container">
-          <h2 class="reviews__title section__title">Отзывы</h2>
+          <h2 class="reviews__title">Отзывы</h2>
 
           <div class="reviews__slider slider">
             <div class="slider__slide">
@@ -114,8 +118,8 @@
               <p class="slider__mail">@misssssiskras</p>
             </div>
             <div class="slider__controls">
-              <span class="slider__previous">Вперёд</span>
-              <span class="slider__next">Назад</span>
+              <span class="slider__previous visually-hidden">Вперёд</span>
+              <span class="slider__next visually-hidden">Назад</span>
             </div>
           </div>
 
