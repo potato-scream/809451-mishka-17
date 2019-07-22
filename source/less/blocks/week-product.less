@@ -45,6 +45,7 @@
 
 .week-product__button {
   margin-top: 26px;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -71,5 +72,40 @@
     width: 50%;
     padding-right: 44px;
     float: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .week-product {
+    min-height: 805px;
+  }
+
+  .week-product__title-wrapper {
+    min-height: 200px;
+    .flex();
+  }
+
+  .week-product__type {
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: bold;
+    order: 1;
+  }
+
+  .week-product__parameters-box {
+    width: 292px;
+    margin-left: 175px;
+  }
+
+  .week-product__price-box {
+    width: 292px;
+    margin-left: 175px;
+    margin-top: 112px;
+  }
+
+  .week-product__image {
+    display: block;
+    margin: 0;
+    margin-top: -157px;
   }
 }
