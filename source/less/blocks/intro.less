@@ -4,6 +4,10 @@
   padding-top: 70px;
 }
 
+.intro__header {
+  display: none;
+}
+
 .intro__title {
   margin: 0;
   color: #000000;
@@ -13,7 +17,17 @@
 }
 
 @media (min-width: @tablet-width) {
-  .intro__container {
-    min-height: 564px;
+    .intro__header {
+    .flex();
+  }
+
+  .intro__site-navigation {
+    .flex();
+    .list-reset();
+  }
+
+  .intro__delivery {
+    margin: 0;
   }
 }
+

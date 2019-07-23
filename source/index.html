@@ -27,21 +27,16 @@
 
       <button class="header__menu-btn" type="button"></button>
 
-        <ul class="header__site-navigation">
-          <li class="header__site-item">Каталог товаров</li>
-          <li class="header__site-item">Вязание на заказ</li>
-        </ul>
-        <ul class="header__user-navigation">
-          <li class="header__user-item">Поиск по сайту</li>
-          <li class="header__user-item">Корзина: пока пуста</li>
-        </ul>
+      <ul class="header__user-navigation">
+        <li class="header__user-item">Поиск по сайту</li>
+        <li class="header__user-item">Корзина: пока пуста</li>
+      </ul>
 
-        <ul class="header__product-navigation">
-          <li class="header__product-item">Новые поступления</li>
-          <li class="header__product-item">Распродажа</li>
-        </ul>
+      <ul class="header__product-navigation">
+        <li class="header__product-item">Новые поступления</li>
+        <li class="header__product-item">Распродажа</li>
+      </ul>
 
-        <p class="header__delivery">Бесплатная доставка по России</p>
       </div>
 
     </header>
@@ -49,7 +44,14 @@
     <main class="main">
 
       <section class="main__intro intro">
-        <div class="container intro__container">
+        <div class="container">
+          <div class="intro__header">
+              <ul class="intro__site-navigation">
+                <li class="intro__site-item">Каталог товаров</li>
+                <li class="intro__site-item">Вязание на заказ</li>
+              </ul>
+              <p class="intro__delivery">Бесплатная доставка по России</p>
+          </div>
           <h1 class="intro__title">Милые штуки ручной<br>работы для дома</h1>
         </div>
       </section>
@@ -217,7 +219,7 @@
       </section>
 
       <section class="contacts">
-        <div class="container contacts__conteiner">
+        <div class="container contacts__container">
           <h2 class="contacts__title">Контакты</h2>
 
           <dl class="contacts__list">
@@ -235,7 +237,10 @@
         <p class="map contacts__map">
           <img class="map__image" src="./img/map-mobile@1x.jpg" alt="Наш офис на карте" width="322" height="457">
         </p>
-        <a class="contacts__button button" href="#">Напишите нам</a>
+
+        <div class="contacts__button-box">
+          <a class="contacts__button button" href="#">Напишите нам</a>
+        </div>
       </section>
 
     </main>
