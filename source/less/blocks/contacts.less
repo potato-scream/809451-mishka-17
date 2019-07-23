@@ -1,3 +1,9 @@
+.contacts {
+  min-height: 895px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .contacts__title {
   margin: 0;
   font-size: 18px;
@@ -15,4 +21,53 @@
   margin: 0;
   font-size: 15px;
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 928px;
+  }
+
+  .contacts__list {
+    .flex();
+    margin: 0;
+  }
+
+  .contacts__item {
+    .flex();
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    min-height: 636px;
+    padding-top: 69px;
+    padding-bottom: 100px;
+  }
+
+  .contacts__conteiner {
+    padding-left: 175px;
+  }
+
+  .contacts__title {
+    margin-top: 70px;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    float: right;
+    margin: 0;
+    margin-right: 50px;
+    margin-top: -200px;
+  }
+
+  .contacts__button {
+    margin-top: 80px;
+  }
 }

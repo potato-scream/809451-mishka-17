@@ -1,6 +1,14 @@
+.reviews__container {
+  position: relative;
+}
+
 .reviews__title {
   .section-title();
   margin: 0;
+}
+
+.reviews__button {
+  position: absolute;
 }
 
 @media (min-width: @tablet-width) {
@@ -8,5 +16,20 @@
     min-height: 542px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    min-height: 548px;
+    padding-bottom: 92px;
+    background-image: none;
+  }
+
+  .reviews__container {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    padding-left: 175px;
+    padding-top: 90px;
   }
 }

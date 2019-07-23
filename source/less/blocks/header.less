@@ -1,13 +1,13 @@
 .header {
+  min-height: 80px;
   border-top: 1px solid #ececec;
   background-color: #ffffff;
 }
 
 .header__container {
   .flex();
-  min-height: 79px;
   justify-content: flex-end;
-  padding-top: 21px;
+  padding-top: 4px;
 }
 
 .header__logo {
@@ -61,10 +61,11 @@
 .header__site-navigation,
 .header__user-navigation {
   .list-reset();
+  display: none;
 }
 
 .header__product-navigation {
- display: none;
+  display: none;
 }
 
 .header__delivery {
