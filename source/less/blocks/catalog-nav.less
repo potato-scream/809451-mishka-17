@@ -59,3 +59,29 @@
   right: 26px;
   top: 21px;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog-nav {
+    width: 668px;
+    min-height: 119px;
+    margin: 0 auto;
+  }
+
+  .catalog-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .catalog-nav__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-nav {
+    width: 1050px;
+    min-height: 119px;
+    margin: 0 auto;
+  }
+}

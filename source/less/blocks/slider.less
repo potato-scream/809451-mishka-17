@@ -6,14 +6,57 @@
 
 .slider__author {
   margin: 0;
+  margin-top: 27px;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .slider__mail {
   margin: 0;
+  margin-top: 3px;
   font-size: 17px;
   line-height: 30px;
 }
+
+.slider__controls {
+  margin-top: 29px;
+  font-size: 0;
+  width: 260px;
+  height: 52px;
+  border: 1px solid #ececec;
+}
+
+.slider__previous,
+.slider__next {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 37px;
+  padding-right: 42px;
+}
+
+.slider__next {
+  border-left: 1px solid #ececec;
+  padding-right: 41px;
+}
+
+@media (min-width: @tablet-width) {
+  .slider {
+    position: relative;
+    margin-top: 60px;
+  }
+
+  .slider__controls {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+  }
+}
+
+// @media (min-width: @desktop-width) {
+
+// }
