@@ -1,11 +1,18 @@
 .form {
   padding-top: 23px;
+  padding-bottom: 55px;
 }
 
 .form__set {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+.form__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 .form__set--radio {
@@ -28,9 +35,23 @@
   padding-bottom: 43px;
 }
 
+.form__set--tel {
+  margin-top: 30px;
+}
+
+.form__set--email {
+  margin-top: 30px;
+}
+
+.form__set--tel .form__text,
+.form__set--email .form__text {
+  padding-top: 21px;
+  padding-bottom: 17px;
+}
+
 .form__title {
   margin: 0;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
   color: @accent-color;
@@ -48,16 +69,48 @@
   }
 }
 
+.form__set--email .form__title::before {
+  width: 179px;
+  bottom: 7px;
+  left: 81px;
+}
+
+.form__set--more {
+  margin-top: 33px;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 142px;
+  border: 2px solid #444444;
+  margin-top: 23px;
+  padding: 14px 16px;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+}
+
+.form__textarea::placeholder {
+  opacity: 0.3;
+}
+
 .form__item {
   margin: 0;
+}
+
+.form__item--surname,
+.form__item--patronymic {
+  margin-top: 22px;
 }
 
 .form__label--checkbox,
 .form__label--radio {
   display: block;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
   color: #000000;
   position: relative;
   padding-left: 64px;
@@ -90,6 +143,15 @@
   display: none;
 }
 
+.form__radio:focus + .form__label--radio::before {
+  outline: auto;
+}
+
+
+.form__checkbox:focus + .form__label--checkbox::before {
+  outline: auto;
+}
+
 .form__radio:checked + .form__label--radio::after {
   display: block;
 }
@@ -108,18 +170,48 @@
   background-position: 8px 1px;
 }
 
+.form__checkbox:hover + .form__label--checkbox::before {
+  border-color: #62d1ba;
+}
+
+.form__checkbox:active + .form__label--checkbox::before {
+  border-color: #c7c7c7;
+}
+
+.form__item--name {
+  padding-top: 26px;
+}
+
+.form__text {
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 16px 0;
+  border-bottom: 2px solid #000000;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+}
+
 .form__text::placeholder {
   font-size: 16px;
   line-height: 18px;
   opacity: 0.3;
 }
 
-.form__textarea::placeholder {
-  opacity: 0.3;
-}
-
 .form__required {
   margin: 0;
+  margin-top: 13px;
   font-size: 14px;
   line-height: 16px;
+}
+
+.form__button {
+  width: 100%;
+  margin-top: 31px;
 }
