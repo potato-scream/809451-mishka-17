@@ -29,6 +29,7 @@
 }
 
 .form__title {
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -75,6 +76,36 @@
 .form__label--radio::before {
   border-radius: 50%;
   top: -8px;
+}
+
+.form__label--radio::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+  top: 4px;
+  left: 12px;
+  display: none;
+}
+
+.form__radio:checked + .form__label--radio::after {
+  display: block;
+}
+
+.form__radio:hover + .form__label--radio::before {
+  border-color: #62d1ba;
+}
+
+.form__radio:active + .form__label--radio::before {
+  border-color: #c7c7c7;
+}
+
+.form__checkbox:checked + .form__label--checkbox {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 1px;
 }
 
 .form__text::placeholder {
