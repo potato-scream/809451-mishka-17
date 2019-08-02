@@ -85,6 +85,7 @@
   border: 2px solid #444444;
   margin-top: 23px;
   padding: 14px 16px;
+  font-family: inherit;
 
   &:hover {
     border-color: #62d1ba;
@@ -183,11 +184,12 @@
 }
 
 .form__text {
-  width: 100%;
+  width: 260px;
   display: block;
   border: none;
   padding: 16px 0;
   border-bottom: 2px solid #000000;
+  font-family: inherit;
 
   &:hover {
     border-color: #62d1ba;
@@ -214,4 +216,17 @@
 .form__button {
   width: 100%;
   margin-top: 31px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__label {
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: bold;
+  }
+
+  .form__required {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
