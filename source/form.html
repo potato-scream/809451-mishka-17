@@ -123,93 +123,111 @@
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
           уточнить детали.
         </p>
-
-        <form class="form" action="#" method="POST">
-          <div class="form__set form__set--radio">
+      </div>
+      <form class="form" action="#" method="POST">
+        <div class="form__set form__set--radio">
+          <div class="container">
             <h2 class="form__title">Тип</h2>
-            <p class="form__item">
-              <input class="form__radio visually-hidden" type="radio" name="type" id="accessories">
-              <label class="form__label form__label--radio" for="accessories">Аксессуар для<br>интерьера</label>
-            </p>
-            <p class="form__item">
-              <input class="form__radio visually-hidden" type="radio" name="type" id="toy">
-              <label class="form__label form__label--radio" for="toy">Детская игрушка</label>
-            </p>
+            <ul class="form__list">
+              <li class="form__item form__item--radio">
+                <input class="form__radio visually-hidden" type="radio" name="type" id="accessories">
+                <label class="form__label form__label--radio" for="accessories">Аксессуар для интерьера</label>
+              </li>
+              <li class="form__item form__item--radio">
+                <input class="form__radio visually-hidden" type="radio" name="type" id="toy">
+                <label class="form__label form__label--radio" for="toy">Детская игрушка</label>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div class="form__set form__set--checkbox">
+        <div class="form__set form__set--checkbox">
+          <div class="container">
             <h2 class="form__title">Цвет</h2>
-            <p class="form__item">
-              <input class="form__checkbox visually-hidden" type="checkbox" name="white" id="white">
-              <label class="form__label form__label--checkbox" for="white">Белый</label>
-            </p>
-            <p class="form__item">
-              <input class="form__checkbox visually-hidden" type="checkbox" name="grey" id="grey">
-              <label class="form__label form__label--checkbox" for="grey">Серый</label>
-            </p>
-            <p class="form__item">
-              <input class="form__checkbox visually-hidden" type="checkbox" name="tiffany" id="tiffany">
-              <label class="form__label form__label--checkbox" for="tiffany">«Тиффани»</label>
-            </p>
-            <p class="form__item">
-              <input class="form__checkbox visually-hidden" type="checkbox" name="black" id="black">
-              <label class="form__label form__label--checkbox" for="black">Чёрный</label>
-            </p>
-            <p class="form__item">
-              <input class="form__checkbox visually-hidden" type="checkbox" name="pink" id="pink">
-              <label class="form__label form__label--checkbox" for="pink">Розовый</label>
-            </p>
-            <p class="form__item">
-              <input class="form__checkbox visually-hidden" type="checkbox" name="orange" id="orange">
-              <label class="form__label form__label--checkbox" for="orange">Оранжевый</label>
-            </p>
+            <ul class="form__list form__list--checkbox">
+              <li class="form__item form__item--checkbox">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="white" id="white">
+                <label class="form__label form__label--checkbox" for="white">Белый</label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="grey" id="grey">
+                <label class="form__label form__label--checkbox" for="grey">Серый</label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="tiffany" id="tiffany">
+                <label class="form__label form__label--checkbox" for="tiffany">«Тиффани»</label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="black" id="black">
+                <label class="form__label form__label--checkbox" for="black">Чёрный</label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="pink" id="pink">
+                <label class="form__label form__label--checkbox" for="pink">Розовый</label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="orange" id="orange">
+                <label class="form__label form__label--checkbox" for="orange">Оранжевый</label>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div class="form__set">
+        <div class="form__set form__set--username">
+          <div class="container">
             <h2 class="form__title">ФИО</h2>
-            <p class="form__item form__item--name">
-              <label class="form__label" for="name">Имя:</label>
-              <input class="form__text" type="text" name="name" id="name" placeholder="Введите ваше имя*">
-            </p>
-            <p class="form__item form__item--surname">
-              <label class="form__label" for="surname">Фамилия:</label>
-              <input class="form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
-            </p>
-            <p class="form__item form__item--patronymic">
-              <label class="form__label" for="patronymic">Отчество:</label>
-              <input class="form__text" type="text" name="patronymic" id="patronymic"
-                placeholder="Отчество, если желаете">
-            </p>
+            <ul class="form__list">
+              <li class="form__item form__item--name">
+                <label class="form__label" for="name">Имя:</label>
+                <input class="form__text" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+              </li>
+              <li class="form__item form__item--surname">
+                <label class="form__label" for="surname">Фамилия:</label>
+                <input class="form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+              </li>
+              <li class="form__item form__item--patronymic">
+                <label class="form__label" for="patronymic">Отчество:</label>
+                <input class="form__text" type="text" name="patronymic" id="patronymic"
+                  placeholder="Отчество, если желаете">
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div class="form__set form__set--tel">
+        <div class="form__set form__set--tel">
+          <div class="container">
             <h2 class="form__title">Тел</h2>
             <p class="form__item">
               <input class="form__text" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               <span class="form__icon"></span>
-            </p>
+              <p>
           </div>
+        </div>
 
-          <div class="form__set form__set--email">
+        <div class="form__set form__set--email">
+          <div class="container">
             <h2 class="form__title">E-mail</h2>
             <p class="form__item form__item">
               <input class="form__text" type="email" name="email" id="mail" placeholder="Ваш Email*">
               <span class="form__icon"></span>
             </p>
           </div>
+        </div>
 
-          <div class="form__set form__set--more">
+        <div class="form__set form__set--more">
+          <div class="container">
             <h2 class="form__title">Доп</h2>
             <textarea class="form__textarea" name="addition" cols="30" rows="10"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+            <p class="form__required">*Поля обязательны для заполнения</p>
+
+            <button class="button form__button" type="submit">Отправить заказ</button>
           </div>
-
-          <p class="form__required">*Поля обязательны для заполнения</p>
-
-          <button class="button form__button" type="submit">Отправить заказ</button>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
+
   </main>
 
   <footer class="footer">
