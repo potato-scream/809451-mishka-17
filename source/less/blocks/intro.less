@@ -9,12 +9,11 @@
 
 .intro__title {
   margin: 0;
-  padding-left: 3px;
   color: #000000;
   font-size: 27px;
   line-height: 30px;
-  letter-spacing: 2px;
   text-align: center;
+  font-weight: bold;
 }
 
 @media (min-width: @tablet-width) {
@@ -29,5 +28,17 @@
 
   .intro__delivery {
     margin: 0;
+  }
+
+  .intro__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

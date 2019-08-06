@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: @text-color;
@@ -10,5 +10,15 @@
   border: 2px solid #444444;
   padding-top: 14px;
   padding-bottom: 14px;
-  letter-spacing: 1px;
+  background-color: transparent;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

@@ -5,3 +5,33 @@
   color: #000000;
   font-weight: bold;
 }
+
+.form-main__intro {
+  min-height: 176px;
+  background-color: #f1f1f1;
+  padding-top: 70px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .form-main__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .form-main__intro {
+    min-height: 223px;
+    padding-top: 93px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-main__intro {
+    min-height: 255px;
+  }
+
+  .form-main__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

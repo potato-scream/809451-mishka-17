@@ -10,7 +10,6 @@
 .reviews__title {
   .section-title();
   margin: 0;
-  letter-spacing: 1px;
 }
 
 .reviews__slider {
@@ -28,6 +27,11 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -35,6 +39,11 @@
     min-height: 548px;
     padding-bottom: 92px;
     background-image: none;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .reviews__container {

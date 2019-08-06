@@ -5,7 +5,6 @@
 .about-us__title {
   .section-title();
   margin: 0;
-  letter-spacing: 0.8px;
 }
 
 .about-us__list {
@@ -27,6 +26,7 @@
 
 .about-us__item--price .about-us__content {
   padding-top: 22px;
+  padding-right: 37px;
 }
 
 .about-us__item--likes {
@@ -39,6 +39,10 @@
 
 .about-us__item--likes .about-us__content {
   padding-top: 19px;
+}
+
+.about-us__item--knitting .about-us__content {
+  padding-right: 36px;
 }
 
 .about-us__item--roket .about-us__pic {
@@ -70,12 +74,21 @@
   line-height: 20px;
   color: #000000;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
 @media (min-width: @tablet-width) {
   .about-us {
     min-height: 640px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__content {
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .about-us__list {
