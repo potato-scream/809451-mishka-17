@@ -46,13 +46,25 @@
 @media (min-width: @tablet-width) {
   .slider {
     position: relative;
-    margin-top: 60px;
+    margin-top: 49px;
   }
 
   .slider__controls {
     position: absolute;
-    bottom: 20px;
+    bottom: 3px;
     right: 10px;
+    border: none;
+    width: 167px;
+  }
+
+  .slider__previous,
+  .slider__next {
+    padding-left: 23px;
+    padding-right: 10px;
+  }
+
+  .slider__next {
+    border: none;
   }
 
   .slider__text {
@@ -61,11 +73,21 @@
 
   .slider__author {
     font-size: 18px;
+    margin-top: 57px;
+  }
+
+  .slider__mail {
+    margin-top: 5px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .slider__text {
+    padding-right: 80px;
+  }
+
   .slider__author {
+    margin-top: 38px;
     font-size: 17px;
   }
 }
