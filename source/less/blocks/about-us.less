@@ -26,7 +26,7 @@
 
 .about-us__item--price .about-us__content {
   padding-top: 22px;
-  padding-right: 37px;
+  padding-right: 70px;
 }
 
 .about-us__item--likes {
@@ -58,12 +58,8 @@
   margin-bottom: 0;
 }
 
-.about-us__item--gift .about-us__pic {
-  margin-top: 2px;
-}
-
 .about-us__item--gift .about-us__content {
-  padding-top: 17px;
+  padding-top: 15px;
   padding-right: 50px;
 }
 
@@ -78,7 +74,8 @@
 
 @media (min-width: @tablet-width) {
   .about-us {
-    min-height: 640px;
+    padding-top: 47px;
+    padding-bottom: 82px;
   }
 
   .about-us__title {
@@ -92,19 +89,54 @@
   }
 
   .about-us__list {
-    column-count: 2;
+    margin-top: 50px;
+    .flex();
   }
 
   .about-us__item {
     width: 334px;
-    padding-right: 45px;
+    margin-bottom: 56px;
+  }
+
+  .about-us__item--materials {
+    order: 1;
+  }
+
+  .about-us__item--price {
+    margin-bottom: 63px;
+    order: 3;
+  }
+
+  .about-us__item--likes {
+    order: 5;
+    padding-right: 95px;
+    margin-bottom: 0;
+  }
+
+  .about-us__item--knitting {
+    order: 2;
+  }
+
+  .about-us__item--knitting .about-us__content {
+    padding-top: 16px;
+  }
+
+  .about-us__item--roket {
+    margin-top: 2px;
+    padding-right: 10px;
+    order: 4;
+  }
+
+  .about-us__item--gift {
+    order: 6;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about-us {
     padding-top: 58px;
-    min-height: 662px;
+    padding-bottom: 12px;
   }
 
   .about-us__title {
@@ -113,10 +145,32 @@
     font-size: 53px;
     line-height: 57px;
     font-weight: bold;
+    letter-spacing: -1px;
   }
 
   .about-us__list {
     width: 700px;
     margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .about-us__item {
+    width: 350px;
+  }
+
+  .about-us__item--price .about-us__content {
+    padding-right: 90px;
+  }
+
+  .about-us__item--likes {
+    padding-right: 110px;
+  }
+
+  .about-us__item--knitting {
+    padding-right: 65px;
+  }
+
+  .about-us__item--gift {
+    padding-right: 60px;
   }
 }
