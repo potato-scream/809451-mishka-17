@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 31px;
+  padding-top: 32px;
   padding-bottom: 39px;
 }
 
@@ -75,6 +75,18 @@
     padding-top: 62px;
     padding-bottom: 43px;
     min-height: 928px;
+    position: relative;
+  }
+
+  .contacts::before {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 100px;
+    top: 46px;
+    right: 45px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
   }
 
   .contacts__item {
@@ -130,6 +142,11 @@
     min-height: auto;
   }
 
+  .contacts::before {
+    top: 127px;
+    left: 114px;
+  }
+
   .contacts .contacts__container {
     width: 525px;
     margin: 0;
@@ -154,6 +171,7 @@
     margin-right: 50px;
     margin-top: -326px;
     width: 525px;
+    height: 457px;
   }
 
   .contacts__button-box {

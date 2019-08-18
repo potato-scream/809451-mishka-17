@@ -94,6 +94,16 @@
   padding-left: 75px;
 }
 
+.header__site-link:hover,
+.header__product-link:hover {
+  opacity: 0.6;
+}
+
+.header__site-link:active,
+.header__product-link:active {
+  opacity: 0.3;
+}
+
 .header__site-link:first-child {
   border-top: 1px solid #ececec;
 }
@@ -106,9 +116,18 @@
 .header__user-item--search svg,
 .header__user-item--cart svg {
   position: absolute;
-  top: 31px;
-  left: 32px;
+  top: 29px;
+  left: 31px;
   opacity: 0.2;
+}
+
+.header__user-link:hover {
+  opacity: 0.6;
+}
+
+.header__user-link:hover svg {
+  fill: #63d1bb;
+  opacity: 1;
 }
 
 .header__product-navigation {
@@ -171,9 +190,12 @@
 
   .header__user-link {
     padding: 0;
+    padding-left: 81px;
+    padding-top: 31px;
     border: none;
     font-size: 17px;
     line-height: 24px;
+    text-align: left;
   }
 
   .header__user-item--search .header__user-link {
@@ -190,12 +212,6 @@
   .header__user-item--search svg {
     top: 37px;
     left: 32px;
-  }
-
-  .header__user-item--cart .header__user-link {
-    padding-top: 31px;
-    padding-left: 81px;
-    text-align: left;
   }
 
   .header__user-item--cart svg {

@@ -1,9 +1,19 @@
 .week-product {
   min-height: 826px;
   padding-top: 27px;
-  // background-image: url("../img/bg-zigzag-fill.svg");
-  // background-position: 50% 50%;
-  // background-repeat: repeat-x;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 9px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 330px 11px;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .week-product__type {
@@ -58,6 +68,15 @@
   .week-product {
     min-height: 627px;
     padding-top: 45px;
+    background-size: 768px 15px;
+
+    &::after {
+      width: 778px;
+      height: 26px;
+      background-size: contain;
+      bottom: -7px;
+      left: 0;
+    }
   }
 
   .week-product__title-wrapper {
@@ -121,6 +140,13 @@
 @media (min-width: @desktop-width) {
   .week-product {
     min-height: 805px;
+
+    &::after {
+      width: 1050px;
+      bottom: 0;
+      left: 51px;
+      background-size: 1165px 25px;
+    }
   }
 
   .week-product__title-wrapper {
