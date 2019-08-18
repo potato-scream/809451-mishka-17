@@ -316,20 +316,25 @@
 
   .form__label--radio::before {
     border-radius: 50%;
-    top: -16px;
+    top: -17px;
     left: -1px;
   }
 
   .form__label--radio::after {
     position: absolute;
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: #62d1ba;
-    top: 4px;
-    left: 12px;
+    top: 0;
+    left: 16px;
     display: none;
+  }
+
+  .form__checkbox:checked + .form__label--checkbox::before {
+    background-position: 8px 13px;
+    background-size: 35px;
   }
 
   .form__set--username {
@@ -345,8 +350,15 @@
   .form__item--name .form__text {
     width: 428px;
     display: inline-block;
+    vertical-align: top;
     margin-left: 20px;
     padding: 16px 19px;
+  }
+
+  .form__item--name .form__label,
+  .form__item--surname .form__label,
+  .form__item--patronymic .form__label {
+    line-height: 45px;
   }
 
   .form__item--surname,
@@ -357,6 +369,7 @@
   .form__item--surname .form__text,
   .form__item--patronymic .form__text {
     display: inline-block;
+    vertical-align: top;
     width: 375px;
     margin-left: 21px;
     padding: 16px 18px;
@@ -421,6 +434,16 @@
     margin-left: 136px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+ .form__icon {
+    top: 15px;
+    right: 24px;
+  }
+
+  .form__set--email .form__icon {
+    top: 16px;
+    right: 21px;
   }
 }
 
@@ -504,5 +527,15 @@
     height: 22px;
     top: 0;
     left: 15px;
+  }
+
+  .form__icon {
+    top: 15px;
+    right: 8px;
+  }
+
+  .form__set--email .form__icon {
+    top: 18px;
+    right: 4px;
   }
 }
