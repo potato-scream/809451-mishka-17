@@ -1,4 +1,5 @@
 .modal {
+  display: none;
   position: absolute;
   top: 1046px;
   width: 320px;
@@ -73,11 +74,13 @@
 @media (min-width: @tablet-width) {
   .modal {
     top: 1532px;
+    left: 50%;
+    transform: translateX(-284px);
     width: 567px;
     height: 337px;
     padding-left: 107px;
     padding-right: 95px;
-    padding-top: 50px;
+    padding-top: 32px;
     padding-bottom: 46px;
     border: 1px solid #c7c7c7;
     background-color: #ffffff;
@@ -88,15 +91,32 @@
     font-size: 30px;
     line-height: 57px;
     padding: 0;
+    margin-bottom: 13px;
   }
 
   .modal__paragraph {
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 108px;
+    padding-right: 95px;
     font-size: 17px;
+    letter-spacing: -1px;
   }
 
   .modal__list {
     width: 350px;
+    margin-top: 22px;
+  }
+
+  .modal__size {
+    width: 112px;
+    height: 52px;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .modal__button {
+    width: 350px;
+    margin-top: 31px;
+    padding-top: 17px;
+    padding-bottom: 18px;
   }
 }
