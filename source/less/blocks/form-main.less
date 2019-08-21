@@ -22,12 +22,32 @@
   .form-main__intro {
     min-height: 223px;
     padding-top: 93px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 768px;
+      height: 27px;
+      top: 212px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 749px 27px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-main__intro {
     min-height: 255px;
+
+    &::before {
+      width: 1150px;
+      top: 232px;
+      left: 0;
+      background-size: 1234px 44px;
+    }
   }
 
   .form-main__title {

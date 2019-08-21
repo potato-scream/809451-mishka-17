@@ -8,7 +8,7 @@
 }
 
 .catalog-main__intro {
-  min-height: 177px;
+  min-height: 175px;
   padding-top: 70px;
   background-color: #f1f1f1;
 }
@@ -21,6 +21,19 @@
   .catalog-main__intro {
     min-height: 225px;
     padding-top: 29px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 768px;
+      height: 27px;
+      top: 212px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 749px 27px;
+    }
   }
 
   .catalog-main__title {
@@ -38,5 +51,15 @@
 
   .catalog-main__intro {
     padding-bottom: 100px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1150px;
+      height: 27px;
+      top: 236px;
+      left: 10px;
+      background-size: 838px 27px;
+    }
   }
 }

@@ -31,7 +31,7 @@
 .slider__previous,
 .slider__next {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 37px;
@@ -41,6 +41,16 @@
 .slider__next {
   border-left: 1px solid #ececec;
   padding-right: 41px;
+}
+
+.slider__previous:hover,
+.slider__next:hover {
+  opacity: 0.6;
+}
+
+.slider__previous:active,
+.slider__next:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

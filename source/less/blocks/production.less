@@ -30,12 +30,31 @@
 
 .production__video-box {
   margin: 0;
-  margin-top: 24px;
+  margin-top: 26px;
+  height: 148px;
   background-color: #86a49e;
+  position: relative;
+}
+
+.production__play-button {
+  position: absolute;
+  top: 38px;
+  left: 78px;
+}
+
+.production__play-button:hover svg {
+  transform: scale(1.2);
+}
+
+.production__play-button:active svg {
+  transform: scale(0.8);
+  opacity: 0.3;
 }
 
 .production__content {
-  padding: 26px 32px;
+  padding-top: 28px;
+  padding-left: 34px;
+  padding-right: 32px;
   padding-bottom: 32px;
 }
 
@@ -47,7 +66,7 @@
 
 .production__button {
   width: 100%;
-  margin-top: 47px;
+  margin-top: 25px;
   font-size: 17px;
   line-height: 21px;
 }
@@ -101,6 +120,12 @@
 
   .production__button {
     margin-top: 35px;
+  }
+
+  .production__play-button {
+    position: absolute;
+    top: 187px;
+    left: 284px;
   }
 }
 
@@ -156,7 +181,21 @@
     left: 0;
   }
 
+  .production__container:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .production__container:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
   .production__button {
     margin-top: 46px;
+  }
+
+  .production__play-button {
+    position: absolute;
+    top: 192px;
+    left: 291px;
   }
 }

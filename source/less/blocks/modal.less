@@ -1,0 +1,122 @@
+.modal {
+  display: none;
+  position: absolute;
+  top: 1046px;
+  width: 320px;
+  height: 337px;
+  padding-left: 30px;
+  padding-top: 35px;
+  padding-right: 30px;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 60px;
+  padding-right: 50px;
+}
+
+.modal__paragraph {
+  margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  padding-left: 60px;
+  padding-right: 50px;
+}
+
+.modal__list {
+  .list-reset();
+  .flex();
+  justify-content: space-between;
+  width: 260px;
+  margin-top: 25px;
+}
+
+.modal__size {
+  width: 82px;
+  height: 52px;
+  font-size: 17px;
+  line-height: 17px;
+  color: #444444;
+  border: 2px solid #ececec;
+  text-align: center;
+  background-color: transparent;
+
+  &:hover {
+    border: 2px solid #c7c7c7;
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.modal__button {
+  width: 260px;
+  margin-top: 31px;
+  font-size: 17px;
+  line-height: 17px;
+  border: none;
+  background-color: #63d1bb;
+  color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    top: 1532px;
+    left: 50%;
+    transform: translateX(-284px);
+    width: 567px;
+    height: 337px;
+    padding-left: 107px;
+    padding-right: 95px;
+    padding-top: 32px;
+    padding-bottom: 46px;
+    border: 1px solid #c7c7c7;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+    padding: 0;
+    margin-bottom: 13px;
+  }
+
+  .modal__paragraph {
+    padding-left: 108px;
+    padding-right: 95px;
+    font-size: 17px;
+    letter-spacing: -1px;
+  }
+
+  .modal__list {
+    width: 350px;
+    margin-top: 22px;
+  }
+
+  .modal__size {
+    width: 112px;
+    height: 52px;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .modal__button {
+    width: 350px;
+    margin-top: 31px;
+    padding-top: 17px;
+    padding-bottom: 18px;
+  }
+}
