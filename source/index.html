@@ -170,20 +170,20 @@
           <img class="header__logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
         </picture>
 
-        <button class="header__menu-btn header__menu-btn--close" type="button">
+        <button class="header__menu-btn header__menu-btn--cross header__menu-btn--nojs" type="button">
           <svg class="header__pic-cross" width="20.514" height="20.512">
             <use xlink:href="#icon-login"></use>
           </svg>
         </button>
 
-        <button class="header__menu-btn header__menu-btn--open" type="button">
+        <button class="header__menu-btn header__menu-btn--burger" type="button">
           <svg class="header__pic-burger" width="19.958px" height="14px">
             <use xlink:href="#icon-burger"></use>
           </svg>
         </button>
       </p>
 
-      <ul class="header__site-navigation">
+      <ul class="header__site-navigation header__site-navigation--opened">
         <li class="header__site-item">
           <a class="header__site-link" href="catalog.html">
             Каталог товаров
@@ -196,7 +196,7 @@
         </li>
       </ul>
 
-      <ul class="header__user-navigation">
+      <ul class="header__user-navigation header__user-navigation--opened">
         <li class="header__user-item header__user-item--search">
           <a class="header__user-link" href="#">
             <svg width="17.6" height="17.6">
@@ -412,11 +412,12 @@
 
       </div>
       <p class="map contacts__map">
-        <picture>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" allowfullscreen="true"></iframe>
+        <!-- <picture>
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
             <img class="map__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Наш офис на карте">
-          </picture>
+          </picture> -->
         <!-- <img class="map__image" src="./img/map-mobile@1x.jpg" alt="Наш офис на карте" width="322" height="457"> -->
       </p>
 
@@ -471,6 +472,8 @@
     </div>
   </footer>
 
+  <div class="modal-backdrop"></div>
+
   <div class="modal">
     <h1 class="modal__title">Добавить в корзину</h1>
     <p class="modal__paragraph">Выберите размер:</p>
@@ -489,6 +492,7 @@
       </li>
     </ul>
   </div>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
