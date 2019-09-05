@@ -1,17 +1,21 @@
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   color: @text-color;
-  width: 320px;
+}
+
+.container {
+  width: 260px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
-  body {
-    width: 768px;
+  .container {
+    width: 668px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  body {
+  .container {
     width: 1150px;
   }
 }

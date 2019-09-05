@@ -55,7 +55,6 @@ gulp.task("sprite", function () {
   }))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
-
 });
 
 gulp.task("html", function () {
