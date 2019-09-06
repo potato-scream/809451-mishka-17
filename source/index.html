@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/opensans.woff" as="font">
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -98,29 +98,29 @@
     </section>
 
     <section class="catalog-nav">
-      <h2 class="visually-hidden">Каталог товаров</h2>
-      <ul class="catalog-nav__list">
-        <li class="catalog-nav__item catalog-nav__item--interior">
-          <a class="catalog-nav__link" href="#">
-            Предметы интерьера
-            <span class="catalog-nav__icon">
-              <svg class="catalog-nav__icon-pic" width="40.219px" height="62.411px">
-                <use xlink:href="#icon-interior"></use>
-              </svg>
-            </span>
-          </a>
-        </li>
-        <li class="catalog-nav__item catalog-nav__item--toys">
-          <a class="catalog-nav__link" href="#">
-            Детские игрушки
-            <span class="catalog-nav__icon catalog-nav__icon--toys">
-              <svg class="catalog-nav__icon-pic" width="60px" height="59.62px">
-                <use xlink:href="#icon-toys"></use>
-              </svg>
-            </span>
-          </a>
-        </li>
-      </ul>
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <ul class="catalog-nav__list">
+          <li class="catalog-nav__item catalog-nav__item--interior">
+            <a class="catalog-nav__link" href="#">
+              Предметы интерьера
+              <span class="catalog-nav__icon">
+                <svg class="catalog-nav__icon-pic" width="40.219px" height="62.411px">
+                  <use xlink:href="#icon-interior"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="catalog-nav__item catalog-nav__item--toys">
+            <a class="catalog-nav__link" href="#">
+              Детские игрушки
+              <span class="catalog-nav__icon catalog-nav__icon--toys">
+                <svg class="catalog-nav__icon-pic" width="60px" height="59.62px">
+                  <use xlink:href="#icon-toys"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
     </section>
 
     <section class=" week-product">
@@ -258,32 +258,34 @@
 
     <section class="contacts">
       <div class="container contacts__container">
-        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__content">
+          <h2 class="contacts__title">Контакты</h2>
 
-        <dl class="contacts__list">
-          <div class="contacts__item contacts__item--mail">
-            <dt class="contacts__term">e-mail:</dt>
-            <dd class="contacts__description">
-              <a class="contacts__mail-link" href="mailto:info@mimimishkashop.ru">
-                info@mimimishkashop.ru
-              </a>
-            </dd>
+          <dl class="contacts__list">
+            <div class="contacts__item contacts__item--mail">
+              <dt class="contacts__term">e-mail:</dt>
+              <dd class="contacts__description">
+                <a class="contacts__mail-link" href="mailto:info@mimimishkashop.ru">
+                  info@mimimishkashop.ru
+                </a>
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt class="contacts__term">адрес:</dt>
+              <dd class="contacts__description contacts__description--adress">г. Санкт-Петербург,<br> ул. Большая
+                Конюшенная,<br> д. 19/8, офис 101
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <p class="map contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD"></iframe>
+        </p>
+        <div class="contacts__content">
+          <div class="contacts__button-box">
+            <a class="contacts__button button" href="#">Напишите нам</a>
           </div>
-          <div class="contacts__item">
-            <dt class="contacts__term">адрес:</dt>
-            <dd class="contacts__description contacts__description--adress">г. Санкт-Петербург,<br> ул. Большая
-              Конюшенная,<br> д. 19/8, офис 101
-            </dd>
-          </div>
-        </dl>
-
-      </div>
-      <p class="map contacts__map">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD"></iframe>
-      </p>
-
-      <div class="contacts__button-box">
-        <a class="contacts__button button" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
 

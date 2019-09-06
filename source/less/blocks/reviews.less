@@ -10,9 +10,11 @@
     height: 8px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: 330px 8px;
+    background-size: 321px 8px;
+    background-position-x: -8px;
     bottom: 1px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -43,12 +45,12 @@
       position: absolute;
       content: "";
       background-image: url("../img/bg-zigzag-line.svg");
-      width: 802px;
+      width: 768px;
       height: 25px;
-      background-size: 768px 25px;
-      transform: scale(-1, 1);
-      bottom: -3px;
-      left: -15px;
+      background-size: 768px 17px;
+      bottom: -7px;
+      left: 50%;
+      transform: rotate(180deg) translateX(50%);
     }
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -79,9 +81,10 @@
       width: 1050px;
       height: 25px;
       bottom: 5px;
-      left: 50px;
-      background-size: 1050px 25px;
-      transform: rotate(180deg);
+      background-size: 1054px 25px;
+      background-position-x: -2px;
+      transform: rotate(180deg) translateX(50%);
+      left: 50%;
     }
   }
 

@@ -12,7 +12,8 @@
     background-repeat: repeat-x;
     background-size: 330px 11px;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -71,12 +72,11 @@
     background-size: 768px 15px;
 
     &::after {
-      width: 802px;
+      width: 768px;
       height: 25px;
-      background-size: 768px 25px;
-      bottom: -2px;
-      left: -16px;
-      transform: scale(-1, 1);
+      background-size: 768px 18px;
+      left: 50%;
+      transform: rotate(180deg) translateX(50%);
     }
   }
 
@@ -120,7 +120,6 @@
   }
 
   .week-product__image {
-    width: 50%;
     margin-top: 8px;
   }
 
@@ -148,8 +147,8 @@
       height: 25px;
       background-size: 1050px 25px;
       bottom: 4px;
-      left: 49px;
-      transform: rotate(180deg);
+      left: 50%;
+      transform: rotate(180deg) translateX(50%);
     }
   }
 

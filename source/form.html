@@ -6,86 +6,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мишка форма заказа</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/opensans.woff" as="font">
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
-    <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <header class="header">
-    <nav class="header__navigation">
-      <p class="header__logo-box">
-        <a href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="header__logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
-          </picture>
-        </a>
-        <button class="header__menu-btn header__menu-btn--close" type="button">
-          <svg class="header__pic-cross" width="20.514" height="20.512">
-            <use xlink:href="#icon-menu-close"></use>
-          </svg>
-        </button>
-
-        <button class="header__menu-btn header__menu-btn--open" type="button">
-          <svg class="header__pic-burger" width="19.958px" height="14px">
-            <use xlink:href="#icon-menu-open"></use>
-          </svg>
-        </button>
-      </p>
-
-      <ul class="header__site-navigation">
-        <li class="header__site-item">
-          <a class="header__site-link" href="catalog.html">
-            Каталог товаров
+    <div class="header__container">
+      <nav class="header__navigation">
+        <p class="header__logo-box">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="header__logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
+            </picture>
           </a>
-        </li>
-        <li class="header__site-item header__site-item--knitting">
-          <a class="header__site-link" href="#">
-            Вязание на заказ
-          </a>
-        </li>
-      </ul>
-
-      <ul class="header__user-navigation">
-        <li class="header__user-item header__user-item--search">
-          <a class="header__user-link" href="#">
-            <svg width="17.6" height="17.6">
-              <use xlink:href="#icon-search"></use>
+          <button class="header__menu-btn header__menu-btn--cross header__menu-btn--nojs" type="button">
+            <svg class="header__pic-cross" width="20.514" height="20.512">
+              <use xlink:href="#icon-menu-close"></use>
             </svg>
-            <span class="header__user-text">Поиск по сайту</span>
-          </a>
-        </li>
-        <li class="header__user-item header__user-item--cart">
-          <a class="header__user-link" href="#">
-            <svg width="20.294" height="18.849">
-              <use xlink:href="#icon-cart"></use>
-            </svg>
-            <span class="header__user-text">Корзина: пока пуста</span>
-          </a>
-        </li>
-      </ul>
+          </button>
 
-      <ul class="header__product-navigation">
-        <li class="header__product-item header__product-item--new">
-          <a class="header__product-link" href="#">
-            Новые поступления
-          </a>
-        </li>
-        <li class="header__product-item">
-          <a class="header__product-link" href="#">
-            Распродажа
-          </a>
-        </li>
-      </ul>
-      <p class="header__delivery">Бесплатная доставка по России</p>
-    </nav>
+          <button class="header__menu-btn header__menu-btn--burger" type="button">
+            <svg class="header__pic-burger" width="19.958px" height="14px">
+              <use xlink:href="#icon-menu-open"></use>
+            </svg>
+          </button>
+        </p>
+
+        <ul class="header__site-navigation">
+          <li class="header__site-item">
+            <a class="header__site-link" href="catalog.html">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="header__site-item header__site-item--knitting">
+            <a class="header__site-link" href="#">
+              Вязание на заказ
+            </a>
+          </li>
+        </ul>
+
+        <ul class="header__user-navigation">
+          <li class="header__user-item header__user-item--search">
+            <a class="header__user-link" href="#">
+              <svg width="17.6" height="17.6">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+              <span class="header__user-text">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="header__user-item header__user-item--cart">
+            <a class="header__user-link" href="#">
+              <svg width="20.294" height="18.849">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              <span class="header__user-text">Корзина: пока пуста</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="header__product-navigation">
+          <li class="header__product-item header__product-item--new">
+            <a class="header__product-link" href="#">
+              Новые поступления
+            </a>
+          </li>
+          <li class="header__product-item">
+            <a class="header__product-link" href="#">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <p class="header__delivery">Бесплатная доставка по России</p>
+      </nav>
+    </div>
   </header>
 
   <main class="form-main">
@@ -165,7 +167,8 @@
               </li>
               <li class="form__item form__item--patronymic">
                 <label class="form__label" for="patronymic">Отчество:</label>
-                <input class="form__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+                <input class="form__text" type="text" name="patronymic" id="patronymic"
+                  placeholder="Отчество, если желаете">
               </li>
             </ul>
           </div>
@@ -175,14 +178,17 @@
           <div class="container">
             <h2 class="form__title">Тел</h2>
             <p class="form__item">
-              <input class="form__text" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^\+\d+" required>
+              <input class="form__text" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^\+\d+"
+                required>
               <span class="form__icon">
                 <svg width="24.829" height="24.333">
                   <use xlink:href="#icon-tel"></use>
                 </svg>
               </span>
-              </p><p>
-          </p></div>
+            </p>
+            <p>
+            </p>
+          </div>
         </div>
 
         <div class="form__set form__set--email">
@@ -202,7 +208,8 @@
         <div class="form__set form__set--more">
           <div class="container">
             <h2 class="form__title">Доп</h2>
-            <textarea class="form__textarea" name="addition" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form__textarea" name="addition" cols="30" rows="10"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
 
             <p class="form__required">*Поля обязательны для заполнения</p>
 
@@ -257,6 +264,8 @@
       </a>
     </div>
   </footer>
+  <script src="js/index.js"></script>
   <script src="js/picturefill.js"></script>
 </body>
+
 </html>
